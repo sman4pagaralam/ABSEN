@@ -1,45 +1,50 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SPMB</title>
-  <link rel="icon" href="https://drive.google.com/file/d/17spZcW3zd9E64qCtMPs-r2o89MKfAB4B/view?usp=drive_link" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absensi Online SMAN 4 Pagar Alam</title>
   <style>
-    html, body {
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #eee;
-      overflow: hidden; /* Mencegah scroll ganda */
+      background: #001233;
+      color: white;
     }
-
-    .iframe-container {
-      width: 100%;
-      height: 100dvh; /* Menggunakan dvh agar pas di mobile browser */
-      overflow: hidden;
+    .loading {
+      text-align: center;
     }
-
-    iframe {
-      display: block;
-      width: 100%;
-      height: 100%;
-      border: none;
+    .spinner {
+      border: 4px solid rgba(255,255,255,0.1);
+      border-top: 4px solid #0088ff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
 </head>
 <body>
-  <div class="iframe-container">
-    <iframe
-      id="app"
-      src="https://www.appsheet.com/start/08df8ddb-9f21-45bb-b245-1afc4f02b203"
-      scrolling="yes"
-      allowfullscreen="true"
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      allow="fullscreen; camera; microphone; display-capture; geolocation;">
-    </iframe>
+  <div class="loading">
+    <h1>📋 Absensi Online SMAN 4 Pagar Alam</h1>
+    <p>Mengalihkan ke aplikasi...</p>
+    <div class="spinner"></div>
+    <small style="color: rgba(255,255,255,0.4);">
+      Jika tidak otomatis, klik <a href="URL_WEB_APP_ABSENSI_ANDA" style="color: #0088ff;">di sini</a>
+    </small>
   </div>
+  <script>
+    // Ganti dengan URL Web App Absensi Anda
+    window.location.href = "https://script.google.com/macros/s/AKfycbwDiMazQuH8uNOSLdYhFnafpZj8MnCAInHczJ-FreBRGxWOAq2fLnkhPGlv_LeB_XQ/exec";
+  </script>
 </body>
 </html>
